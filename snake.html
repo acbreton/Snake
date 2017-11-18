@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Snake</title>
+		<style>
+			.header {
+				display: inline-block;
+				width: 500px;
+				font-family: "Courier New", Courier, monospace;
+				padding-bottom: 5px;
+			}
+
+			.title {
+				font-size: 30px;
+				width: 50%;
+			}
+
+			.centerTitle {
+				font-size: 20px;
+				width: 50%;
+				text-align: center;
+			}
+
+			.rightTitle {
+				font-size: 30px;
+				width: 50%;
+				text-align: right;
+			}
+
+			.footer {
+				display: inline-block;
+				width: 500px;
+				font-family: "Courier New", Courier, monospace;
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="title" style="float: left">Snake</div>
+			<div class="rightTitle" style="display: inline-block">
+				Score -
+				<div id="score" style="display:inline-block"></div>
+			</div>
+		</div>
+		<canvas id="game" width="500" height="500"></canvas>
+		<div class="footer">
+			<div class="centerTitle" style="float: left"> Spacebar - Pause</div>
+			<div class="centerTitle" style="display: inline-block; float: right">
+				"R" - Reset
+			</div>
+		</div>
+	</body>
+	<script src="snake.js"></script>
+</html>
