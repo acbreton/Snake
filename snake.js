@@ -1,17 +1,17 @@
 window.onload=function() {
 	canv=document.getElementById("game");
 	ctx=canv.getContext("2d");
-	document.addEventListener("keydown", keyPush);
-	//setInterval(, 1000/15);
+	document.addEventListener("keydown", keyPush);	
 	document.getElementById('score').innerHTML = score;
 }
 
 let isPaused = false;
 setInterval(function() {
-	  if(!isPaused) {
-	    game()
-	  }
-	}, 1000/15);
+	if(!isPaused) {
+		game()
+	}
+}, 1000/15);
+
 score=0;
 px=py=10;
 gs=25
